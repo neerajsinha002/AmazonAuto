@@ -2,9 +2,10 @@ package cukes;
 
 import com.github.mkolisnyk.cucumber.runner.ExtendedCucumberOptions;
 import cucumber.api.CucumberOptions;
+import org.testng.annotations.BeforeSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test for simple LoginPage.
  */
 
 //@RunWith(ExtendedCucumber.class)
@@ -28,5 +29,8 @@ import cucumber.api.CucumberOptions;
         tags = {"@consistent"})
 
 public class Runner{
+    @BeforeSuite
+    public void launchURL(){
 
+    }
 }
